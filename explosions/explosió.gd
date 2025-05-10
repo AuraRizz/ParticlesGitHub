@@ -9,9 +9,10 @@ func _ready():
 	$Foc/Foc4.emitting = false
 	$Foc/Foc5.emitting = false
 	$Foc/Foc6.emitting = false
-	
+	$Label.visible = true
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept"):
+		$Label.visible = false
 		$Explosio/CPUParticles2D.emitting = true
 		$Casa/Normal.visible = false
 		$Casa/Incendiada.visible = true
