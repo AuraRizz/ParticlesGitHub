@@ -22,3 +22,4 @@ func _process(delta):
 		$Foc/Foc4.emitting = true
 		$Foc/Foc5.emitting = true
 		$Foc/Foc6.emitting = true
+		$AudioStreamPlayer2D.play()
